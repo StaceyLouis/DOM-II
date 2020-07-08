@@ -1,6 +1,5 @@
 // Your code goes here
 let container = document.querySelector('.container');
-let navLinkA = document.querySelectorAll('.nav-link');
 let main = document.querySelector('.intro');
 let bodyA = document.querySelector('body');
 let button = document.createElement('button');
@@ -10,10 +9,10 @@ button.style.padding = "1%";
 container.appendChild(button);
 button.addEventListener("click", () => {
     bodyA.classList.toggle('darkmode');
-  navLinkA.preventDefault();
   
   });
-
+  let links = document.getElementsByClassName('nav-link');
+  links.addEventListener('click', (event) => event.preventDefault());
   
  
 
