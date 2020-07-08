@@ -1,5 +1,6 @@
 // Your code goes here
 let container = document.querySelector('.container');
+let navLinkA = document.querySelectorAll('.nav-link');
 let main = document.querySelector('.intro');
 let bodyA = document.querySelector('body');
 let button = document.createElement('button');
@@ -9,8 +10,12 @@ button.style.padding = "1%";
 container.appendChild(button);
 button.addEventListener("click", () => {
     bodyA.classList.toggle('darkmode');
+  navLinkA.preventDefault();
   
   });
+
+  
+ 
 
   let nav = document.querySelector('nav');
 
@@ -51,12 +56,13 @@ let textA = document.querySelector('.content-section .text-content');
  
 
 
-  window.addEventListener("wheel", () => {
-    console.log("wheeling and dealing lol");
-  });
 
   let h2 = document.querySelector('h2');
   let buttonA = document.querySelector('.logo-heading');
   bodyA.addEventListener("keypress", () => {
     buttonA.style.backgroundColor="black";
   });
+
+
+ 
+ 
