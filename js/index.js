@@ -30,6 +30,11 @@ button.addEventListener("click", () => {
     main.style.backgroundColor = 'white';
   });
 
+  img.addEventListener("click", (e) =>{
+      alert('clickity');
+      e.stopPropagation();
+      })
+
   let text = document.querySelector('.footer p');
   window.addEventListener("scroll", () => {
     text.style.backgroundColor = "gray";
@@ -48,8 +53,10 @@ let textA = document.querySelector('.content-section .text-content');
   window.addEventListener("dblclick", () => {
     document.body.remove();
   });
+
   window.addEventListener("resize", () => {
     alert("dont resize me");
+
   });
 
  
